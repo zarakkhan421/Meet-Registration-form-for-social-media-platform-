@@ -2,7 +2,7 @@
 
 **Purpose:** Portfolio Project
 
-**Technology Used:** HTML, CSS SASS(SCSS) and PHP
+**Technology Used:** HTML, CSS, SASS(SCSS) and PHP
 
 **Date Created:** September 28, 2019
 
