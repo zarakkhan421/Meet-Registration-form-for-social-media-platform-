@@ -1,0 +1,215 @@
+//variables
+$primarycolour: #1aff00;
+$secondarycolour: #ffffff;
+
+//maps
+$fontweights: (
+    "extra-bold": 800,
+    "bold": 700,
+    "semi-bold": 600,
+    "medium": 500
+);
+
+
+
+
+html body{
+    
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.headings{
+    text-align: center;
+}
+
+.welcome{
+    display: block;
+    font-weight: map-get($fontweights, "extra-bold");
+    font-size: 2rem;
+}
+
+.signup{
+    font-weight: map-get($fontweights, "semi-bold");
+    font-size: 1.25rem;
+}
+
+.form-class{
+    margin-left: 10vw;
+    background-color: $primarycolour;
+    width: 40vw;
+    padding: 5%;
+    border-radius: 5%;
+    color: $secondarycolour;
+    box-shadow: 5px 10px 10px rgba(0,0,0,.3);
+}
+
+.form-items{
+    margin: 0 auto;
+    padding: 2.5% 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: map-get($fontweights, "medium");
+    font-size: 1.25rem; 
+}
+
+.form-item1{
+    margin-top: 7.5%;
+}
+
+input{
+    border: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-shadow: 1.25px 2.5px 5px rgba(0,0,0,.3);
+}
+
+input:focus{
+    font-size: 1rem;
+}
+
+.required{
+    display: flex;
+    justify-content: center;
+    font-weight: map-get($fontweights, "medium");
+}
+
+.button-signup{
+    padding: .75% 6%;
+    border-radius: 5%;
+    font-size: 1.25rem;
+    border: 0;
+    background-color: $secondarycolour;
+    color: $primarycolour;
+    margin: 0 33.3333%;
+    margin-top: 2.5%;
+    font-weight: map-get($fontweights, "extra-bold");
+    box-shadow: 2.5px 5px 10px rgba(0,0,0,.3);
+}
+
+.account-holder{
+    display: flex;
+    justify-content: center;
+    font-weight: map-get($fontweights, "medium");
+    margin-right: 5%;
+    margin-top: 2%;
+    letter-spacing: .5px;
+    &:hover{
+        cursor: pointer;
+        color: lightgray;
+    }
+    
+}
+
+.big-triangle{
+    
+    img{
+        height: 100vh;
+        max-width: 40vw;
+        position: absolute;
+        top: 0vh;
+        right: 0;
+        animation-name: to-and-fro;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease;
+    }
+    @keyframes to-and-fro{
+        from{right: 1.5vh;}
+        to{right: 4.5vh}
+    }
+}
+
+.small-triangle{
+    
+    img{
+        height: 30vh;
+        max-width: 15vw;
+        position: absolute;
+        top: 33.5vh;
+        right: 1.5vh;
+        animation-name: to-and-fro;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease;
+    }
+    @keyframes to-and-fro{
+        from{right: 1.5vh;}
+        to{right: 4.5vh}
+    }
+}
+
+
+//signup_cong Page
+
+.form-class-sec{
+    margin-left: 10vw;
+    background-color: $primarycolour;
+    width: 45vw;
+    padding: 5%;
+    border-radius: 5%;
+    color: $secondarycolour;
+    box-shadow: 5px 10px 10px rgba(0,0,0,.3);
+}
+.welcome-signup{
+    font-weight: map-get($fontweights, "bold");
+    font-size: 2.25rem;
+    width: 40vw;
+}
+
+.signup-welcome-signin-button{
+    display: inline;
+    padding: .50% 5%;
+    border-radius: 5%;
+    font-size: 1rem;
+    border: 0;
+    background-color: $secondarycolour;
+    color: $primarycolour;
+    margin-left: 1%;
+    position: relative;
+    bottom: 5px;
+    font-weight: map-get($fontweights, "extra-bold");
+    box-shadow: 2.5px 5px 10px rgba(0,0,0,.3);
+}
+.img-sec{
+    width: 8vw;
+    position: absolute;
+    left: 57.75vw;
+    top: 30%;
+}
+
+
+//signin
+
+.create-account{
+    display: flex;
+    justify-content: center;
+    font-weight: map-get($fontweights, "medium");
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    letter-spacing: .5px;
+    &:hover{
+        cursor: pointer;
+        color: lightgray;
+    }
+}
+
+//signin_enter
+
+.complete{
+    height: 55vh;
+    display: flex;
+    align-items: center;
+}
