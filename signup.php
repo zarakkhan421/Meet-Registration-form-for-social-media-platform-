@@ -73,21 +73,5 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script rel="text/javascript" src="script.js"></script>
 </body>
 </html>
